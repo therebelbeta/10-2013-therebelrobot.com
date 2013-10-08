@@ -1,0 +1,25 @@
+{
+  "name": "therebelrobot",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-concurrent": "*",
+    "load-grunt-tasks": "*",
+    "connect-livereload": "*",
+    "grunt-ngmin": "*",
+    "time-grunt": "*",
+    "grunt-angular-templates": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
