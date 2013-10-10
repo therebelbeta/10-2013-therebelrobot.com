@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "angular": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "angular-smoothscroll": "*",
+    "jquery-waypoints": "~2.0.3"
   }
 }
-
