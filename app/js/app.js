@@ -2,11 +2,11 @@ var App = angular.module('therebelrobot', []);
 
 App.config(function ($routeProvider) {
 	$routeProvider
-	.when('/', 					{  templateUrl: 'templates/states/main.html', controller: 'MainCtrl'  		})
-	.when('/stack', 		{  templateUrl: 'templates/states/main.html', controller: 'StackCtrl'  		})
-	.when('/projects', 	{  templateUrl: 'templates/states/main.html', controller: 'ProjectsCtrl'  })
-	.when('/about', 		{  templateUrl: 'templates/states/main.html', controller: 'AboutCtrl'  		})
-	.when('/contact', 	{  templateUrl: 'templates/states/main.html', controller: 'ContactCtrl'  	})
+	.when('/',					{  templateUrl: 'templates/states/main.html', controller: 'MainCtrl'			})
+	.when('/stack',			{  templateUrl: 'templates/states/main.html', controller: 'StackCtrl'			})
+	.when('/projects',	{  templateUrl: 'templates/states/main.html', controller: 'ProjectsCtrl'	})
+	.when('/about',			{  templateUrl: 'templates/states/main.html', controller: 'AboutCtrl'			})
+	.when('/contact',		{  templateUrl: 'templates/states/main.html', controller: 'ContactCtrl'		})
 	.otherwise({
 		redirectTo: '/'
 	});
@@ -28,20 +28,20 @@ App.run(function ($rootScope, $location, $window) {
 	$rootScope.setApp = function(state){
 		switch (state){
 			case 'main':
-				window.location.hash = "/";
-				return;
+			window.location.hash = "/";
+			return;
 			case 'stack':
-				window.location.hash = "/stack";
-				return;
+			window.location.hash = "/stack";
+			return;
 			case 'projects':
-				window.location.hash = "/projects";
-				return;
+			window.location.hash = "/projects";
+			return;
 			case 'about':
-				window.location.hash = "/about";
-				return;
+			window.location.hash = "/about";
+			return;
 			case 'contact':
-				window.location.hash = "/contact";
-				return;
+			window.location.hash = "/contact";
+			return;
 		}
 	};
 });
