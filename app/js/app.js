@@ -2,11 +2,11 @@ var App = angular.module('therebelrobot', []);
 
 App.config(function ($routeProvider) {
 	$routeProvider
-	.when('/',					{  templateUrl: 'templates/states/main.html', controller: 'MainCtrl'			})
-	.when('/stack',			{  templateUrl: 'templates/states/main.html', controller: 'StackCtrl'			})
-	.when('/projects',	{  templateUrl: 'templates/states/main.html', controller: 'ProjectsCtrl'	})
-	.when('/about',			{  templateUrl: 'templates/states/main.html', controller: 'AboutCtrl'			})
-	.when('/contact',		{  templateUrl: 'templates/states/main.html', controller: 'ContactCtrl'		})
+	.when('/',					{  templateUrl: 'templates/states/main.html',			controller: 'MainCtrl'			})
+	.when('/stack',			{  templateUrl: 'templates/states/stack.html',			controller: 'StackCtrl'			})
+	.when('/projects',	{  templateUrl: 'templates/states/projects.html', controller: 'ProjectsCtrl'	})
+	.when('/about',			{  templateUrl: 'templates/states/about.html',			controller: 'AboutCtrl'			})
+	.when('/contact',		{  templateUrl: 'templates/states/contact.html',	controller: 'ContactCtrl'		})
 	.otherwise({
 		redirectTo: '/'
 	});
@@ -44,4 +44,8 @@ App.run(function ($rootScope, $location, $window) {
 			return;
 		}
 	};
-});
+
+	$(document).ready(function(){
+		$('body').removeClass('preload');
+	});
+}); 
