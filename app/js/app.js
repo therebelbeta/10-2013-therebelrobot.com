@@ -42,7 +42,7 @@ App.run(function ($rootScope, $location, $window) {
 			case 'contact':
 			window.location.hash = "/contact";
 			return;
-		}
+		} 
 	};
 
 	$(document).ready(function(){
