@@ -1,0 +1,70 @@
+body[data-state="cv"]{
+	&[data-device="desktop"]{
+		section#cv{
+			width:600px;
+			margin:auto;
+			padding-top:80px;
+			margin-bottom:60px;
+			[row]{
+				text-align:center;
+				padding:10px;
+
+				h2{
+					text-align:left;
+
+					font-size:15px;    
+					line-height: 20px;
+					background-color: #666666;
+					-webkit-background-clip: text;
+					-moz-background-clip: text;
+					background-clip: text;
+					color: rgba(0,0,0,0.25);
+					text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+				}
+				hr{
+					#tRRt > .opacity(.25);
+					margin-bottom:10px;
+				}
+				// img{
+				// 	height:150px;
+				// 	background-color:white;
+				// 	padding:2px;
+				// 	width:auto;
+				// 	margin-left:10px;
+				// 	margin-right:10px;
+				// }
+				a[text]{
+					display:inline-block;
+					margin:10px;
+					color:fade(@white,80%); 
+					text-decoration:none;
+					font-size:18px;
+					padding:10px;
+					background-color:fade(@black,75%);
+					&:visited, &:hover, &:active{
+					color:@white;
+					text-decoration:none;
+
+					}
+				}
+				&:nth-child(2n){
+					background-color:fade(@black,15%);
+					h2{
+					color: rgba(0,0,0,0.25);
+					text-shadow: rgba(180,180,180,0.5) 0px 3px 3px;
+					}
+				}
+				&:nth-child(2){
+					a.skype{
+						position:relative;
+						top:-20px;
+					}
+				}
+			}
+
+		}
+	}
+	&[data-device="mobile"]{
+
+	}
+}

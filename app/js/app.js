@@ -6,6 +6,7 @@ App.config(function ($routeProvider) {
 	.when('/stack',			{  templateUrl: 'templates/states/stack.html',			controller: 'StackCtrl'			})
 	.when('/projects',	{  templateUrl: 'templates/states/projects.html', controller: 'ProjectsCtrl'	})
 	.when('/about',			{  templateUrl: 'templates/states/about.html',			controller: 'AboutCtrl'			})
+	.when('/cv',				{  templateUrl: 'templates/states/cv.html',			controller: 'CvCtrl'			})
 	.when('/contact',		{  templateUrl: 'templates/states/contact.html',	controller: 'ContactCtrl'		})
 	.otherwise({
 		redirectTo: '/'
@@ -38,6 +39,9 @@ App.run(function ($rootScope, $location, $window) {
 			return;
 			case 'about':
 			window.location.hash = "/about";
+			return;
+			case 'cv':
+			window.location.hash = "/cv";
 			return;
 			case 'contact':
 			window.location.hash = "/contact";

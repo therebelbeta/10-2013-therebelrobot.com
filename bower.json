@@ -4,7 +4,7 @@
   "dependencies": {
     "angular": "*",
     "jquery": "*",
-    "angular-smoothscroll": "*",
-    "jquery-waypoints": "~2.0.3"
+    "codemirror": "~3.19.0",
+    "angular-ui-codemirror": "~0.0.5"
   }
 }
